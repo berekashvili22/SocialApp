@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ApolloProviderWrapper from './Providers/ApolloProvider';
 
 ReactDOM.render(
    <React.StrictMode>
-      <App />
+      <ApolloProviderWrapper />
    </React.StrictMode>,
    document.getElementById('root')
 );
