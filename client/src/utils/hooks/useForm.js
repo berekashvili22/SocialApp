@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useForm = (registerUser, initialState = {}) => {
+const useForm = (callback, initialState = {}) => {
    const [values, setValues] = useState(initialState);
 
    const onChange = (e) => {
@@ -9,7 +9,7 @@ const useForm = (registerUser, initialState = {}) => {
 
    const onSubmit = (e) => {
       e.preventDefault();
-      registerUser();
+      callback();
    };
 
    return { onChange, onSubmit, values };
