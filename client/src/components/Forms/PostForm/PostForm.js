@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, Grid } from 'semantic-ui-react';
+import { Button, Form } from 'semantic-ui-react';
 
 import gql from 'graphql-tag';
 
@@ -15,8 +15,6 @@ const PostForm = () => {
    const [createPost, { error }] = useMutation(CREATE_POST_MUTATION, {
       variables: values,
       update(proxy, result) {
-         console.log(result);
-
          const data = proxy.readQuery({
             query: FETCH_POSTS_QUERY
          });
