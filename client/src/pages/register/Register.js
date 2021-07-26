@@ -3,7 +3,7 @@ import { Button, Form } from 'semantic-ui-react';
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/client';
 import useForm from '../../utils/hooks/useForm';
-import { AuthContext } from '../../context/auth/auth-context';
+import { AuthContext } from '../../context/auth/AuthContext';
 
 const Register = (props) => {
    const { login } = useContext(AuthContext);

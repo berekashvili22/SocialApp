@@ -4,10 +4,10 @@ import { useQuery } from '@apollo/client';
 
 import { Grid } from 'semantic-ui-react';
 
-import PostForm from '../../components/Forms/PostForm/post-form';
-import PostCard from '../../components/Cards/PostCard/post-card';
+import PostForm from '../../components/Forms/PostForm';
+import PostCard from '../../components/Cards/PostCard';
 
-import { AuthContext } from '../../context/auth/auth-context';
+import { AuthContext } from '../../context/auth/AuthContext';
 import { FETCH_POSTS_QUERY } from '../../utils/graphql/graphql';
 
 const Home = () => {
